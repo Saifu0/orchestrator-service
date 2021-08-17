@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	protos "github.com/Saifu0/orchestrator-service/protos/orchestrator"
+	protos "github.com/Saifu0/orchestrator-service/simple-rpc/protos/orchestrator"
 	"github.com/hashicorp/go-hclog"
 	"google.golang.org/grpc"
 )
