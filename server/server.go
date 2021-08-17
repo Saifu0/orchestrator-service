@@ -9,7 +9,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 
-	protos "github.com/Saifu0/orchestrator-service/protos/orchestrator"
+	protos "github.com/Saifu0/orchestrator-service/simple-rpc/protos/orchestrator"
 )
 
 type Orchestrator struct {
