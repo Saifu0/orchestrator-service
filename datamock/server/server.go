@@ -41,7 +41,7 @@ func main() {
 	protos.RegisterDatamockServer(gs, d)
 	reflection.Register(gs)
 
-	listener, err := net.Listen("tcp", ":10000")
+	listener, err := net.Listen("tcp", "localhost:10000")
 	if err != nil {
 		log.Error("Unable to create listener", "error", err)
 		os.Exit(1)
