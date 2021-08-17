@@ -1,4 +1,4 @@
-module github.com/Saifu0/orchestrator-service/simple-rpc
+module github.com/Saifu0/orchestrator-service
 
 go 1.16
 
