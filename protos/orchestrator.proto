@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package protos;
+package orchestrator;
 option go_package="/";
 
 message Request {
@@ -9,10 +9,11 @@ message Request {
 
 message Response {
     string name = 1;
-    string class = 2;
+    int64 class = 2;
     int64 roll = 3;
 }
 
 service Orchestrator {
     rpc GetUserByName(Request) returns (Response);
+    rpc GetUser(Request) returns (Response);
 }

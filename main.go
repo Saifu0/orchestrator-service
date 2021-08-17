@@ -24,7 +24,7 @@ func createServer(port int) {
 	protos.RegisterOrchestratorServer(gs, oc)
 	reflection.Register(gs)
 
-	listener, err := net.Listen("tcp", fmt.Sprintf(":%v", port))
+	listener, err := net.Listen("tcp", fmt.Sprintf("localhost:%v", port))
 	if err != nil {
 		log.Error("Unable to create listener at ", port, " error", err)
 		os.Exit(1)
